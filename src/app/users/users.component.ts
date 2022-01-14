@@ -16,9 +16,12 @@ export class UsersComponent implements OnInit {
     this.getData();
   }
 
+  users!:any[]
+
   getData(){
     return this.searchService.getUsers().subscribe(data =>{
       console.log(data)
+      this.users = data;
     })
   }
 
