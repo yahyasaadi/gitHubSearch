@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchService } from '../sevices/search.service'
 
 @Component({
   selector: 'app-users',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private searchService:SearchService) {
+    // this.searchService.getUsers();
+  }
 
   ngOnInit(): void {
   }
