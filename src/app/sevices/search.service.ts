@@ -13,6 +13,6 @@ export class SearchService {
   
   getUsers(){
     let url = "https://api.github.com/users"
-    return this.http.get(url)
+    return this.http.get<any>(url)
   }
 }
