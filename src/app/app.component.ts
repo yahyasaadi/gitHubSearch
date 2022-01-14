@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SearchService } from './sevices/search.service'
 
 @Component({
   selector: 'app-root',
@@ -9,8 +8,4 @@ import { SearchService } from './sevices/search.service'
 export class AppComponent {
   title = 'GitHubSearch';
 
-  // create constructor
-  constructor(private searchService:SearchService) {
-    this.searchService.getUsers()
-  }
 }

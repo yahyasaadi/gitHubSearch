@@ -10,10 +10,9 @@ export class SearchService {
     // this.getUsers();
   }
 
-  url = "https://api.github.com/users"
+  
   getUsers(){
-    return this.http.get(this.url).subscribe(data=>{
-      console.log(data)
-    })
+    let url = "https://api.github.com/users"
+    return this.http.get(url)
   }
 }
