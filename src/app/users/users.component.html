@@ -4,13 +4,13 @@
         <div class="form-group mx-sm-3 mb-2">
             <input type="text" class="form-control" [(ngModel)]="username" name="username">
             <button class="btn btn-primary mb-2" (click)="getData()">Search</button>
-            <!-- (click)="searchUser()" -->
         </div>
     </form>
 </section>
 
 
-<section>
+<!-- TO USE A BOOTSTRAP CONTAINER -->
+<section class="displaySec">
     <p>Username: {{username}}</p>
     <p>Profile Pic: <img src="{{profilePic}}" alt=""></p>
     <p>GitHub Page: <a href="{{gitHubPage}}">GitHub Link</a></p>

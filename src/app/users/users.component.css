@@ -1,8 +1,17 @@
 .searchSection{
     /* border: 2px red solid; */
     padding: 1rem 2rem;
+    margin: auto;
+    width: 50%;
 }
 
-#btn-primary {
-    padding: 0rem 2rem;
+.btn {
+    padding: 6px 20px;
+    margin-left: 1rem;
+}
+
+
+.displaySec{
+    margin: auto;
+    width: 50%;
 }

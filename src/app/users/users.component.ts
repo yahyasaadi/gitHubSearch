@@ -35,7 +35,6 @@ export class UsersComponent implements OnInit {
 
       
     })
-    this.username = '';
   }
 
   // searchUser(){
