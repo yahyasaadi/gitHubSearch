@@ -2,13 +2,22 @@
 <section class="searchSection mt-3 d-flex">
     <form class="form-inline" action="">
         <div class="form-group mx-sm-3 mb-2">
-            <input type="text" class="form-control">
-            <button class="btn btn-primary mb-2">Search</button>
+            <input type="text" class="form-control" [(ngModel)]="username" name="username">
+            <button class="btn btn-primary mb-2" (click)="searchUser()">Search</button>
         </div>
     </form>
 </section>
 
-<ul *ngFor = "let user of users">
-    <!-- <img src="{{ user.avatar_url }}" alt=""> -->
-    <!-- <li>{{ user.type }}</li> -->
-</ul>
+
+<section>
+    <p>Username: {{username}}</p>
+    <p>Profile Pic: <img src="{{profilePic}}" alt=""></p>
+    <p>GitHub Page: <a href="{{gitHubPage}}">GitHub Link</a></p>
+    <p>Type: {{type}}</p>
+    
+</section>
+
+<!-- <ul *ngFor = "let user of users">
+    <img src="{{ user.avatar_url }}" alt="">
+    <li><a href="{{ user.html_url }}">Repos</a></li>
+</ul> -->
