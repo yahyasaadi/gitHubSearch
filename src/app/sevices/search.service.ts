@@ -10,11 +10,13 @@ export class SearchService {
     // this.getUsers();
   }
 
-  public username:any;
+  // public username:any;
   
-  getUsers(){
-    let url = "https://api.github.com/users"
+  getUsers(username:any){
+    let url = "https://api.github.com/users/" + username;
     return this.http.get<any>(url); 
     // + ':'+this.username
   }
+
+
 }
