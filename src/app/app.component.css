@@ -10,6 +10,14 @@ div {
 }
 
 .displaySec{
+    background-color: cadetblue;
     margin: auto;
     width: 50%;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    float: left;
 }

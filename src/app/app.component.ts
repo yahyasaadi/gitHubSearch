@@ -17,6 +17,8 @@ export class AppComponent {
   public followers:any;
   public following:any;
   public repositories:any;
+  public image:any;
+  public name:any;
 
   getMyGit(){
     return this.searchService.getMyData().subscribe(data=>{
@@ -25,6 +27,8 @@ export class AppComponent {
       this.followers = data.followers;
       this.following = data.following;
       this.repositories = data.public_repos;
+      this.image = data.avatar_url;
+      this.name = data.name;
     })
   }
 }
