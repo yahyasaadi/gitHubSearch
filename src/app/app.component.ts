@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchService } from './sevices/search.service'
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'GitHubSearch';
 
+  constructor(private searchService:SearchService){
+    this.getMyGit();
+  }
+
+  getMyGit(){
+    return this.searchService.getMyData().subscribe(data=>{
+      console.log(data);
+    })
+  }
 }

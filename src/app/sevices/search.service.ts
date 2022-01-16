@@ -18,5 +18,10 @@ export class SearchService {
     // + ':'+this.username
   }
 
+  // My GitHub Data
+  getMyData(){
+    let url = "https://api.github.com/users/yahyasaadi";
+    return this.http.get<any>(url);
+  }
 
 }
