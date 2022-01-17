@@ -10,11 +10,12 @@
 
 
 <!-- TO USE A BOOTSTRAP CONTAINER -->
-<section class="displaySec">
-    <p>Username: {{username}}</p>
-    <p>Profile Pic: <img src="{{profilePic}}" alt=""></p>
-    <p>GitHub Page: <a href="{{gitHubPage}}">GitHub Link</a></p>
-    <p>Type: {{type}}</p>
-    
+<section class="displaySec d-flex flex-column flex-lg-row gap-4">
+    <img class="rounded-pill" src="{{profilePic}}" alt="">
+    <div class="d-flex gap-4">
+        <p>Username: {{username}}</p>
+        <p>GitHub Page: <a href="{{gitHubPage}}">GitHub Link</a></p>
+        <p>Type: {{type}}</p>
+    </div>
 </section>
 
