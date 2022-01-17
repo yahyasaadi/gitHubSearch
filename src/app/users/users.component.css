@@ -12,6 +12,13 @@
 
 
 .displaySec{
-    margin: 0 15vw;
+    /* margin: 0 15vw; */
     width: 100%;
+}
+
+
+img {
+    width: 25%;
+    height: 25%;
+    float: left;
 }

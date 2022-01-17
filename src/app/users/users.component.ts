@@ -16,9 +16,11 @@ export class UsersComponent implements OnInit {
   }
 
   public username = '';
+  public name:any;
   public profilePic:any;
-  public gitHubPage:any;
-  public type:any;
+  public followers:any;
+  public following:any;
+  public repositories:any;
 
   users!:any[]
 
@@ -26,12 +28,11 @@ export class UsersComponent implements OnInit {
   getData(){
     return this.searchService.getUsers(this.username).subscribe(data =>{
       console.log(data)
-      this.username = data.login;
-      this.profilePic = data.avatar_url
-      this.gitHubPage = data.html_url
-      this.type = data.type
-
-      
+      this.name = data.name;
+      this.profilePic = data.avatar_url;
+      this.followers = data.followers;
+      this.following = data.following;
+      this.repositories = data.public_repos;
     })
   }
 
